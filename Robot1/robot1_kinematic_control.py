@@ -16,7 +16,7 @@ from std_msgs.msg import Int32
 class Server:
 	def __init__(self):
 		self.alp = array([[0*pi/180, 120*pi/180, 240*pi/180]]).T #robot specification
-		self.cam_des = sp.Matrix([[160., 90*pi*180, -70.]]).transpose()
+		self.cam_des = sp.Matrix([[160., 90*pi*180, -70.]]).transpose() #camera desired data
 		self.cam = sp.Matrix([[0., 0., 0.]]).transpose()
 		self.omni_cam = sp.Matrix([[0., 0., 0.]]).transpose()
 		self.cam_rot = sp.Matrix([[1,0,0], [0,0,1], [0,0,0]])
